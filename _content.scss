@@ -1,0 +1,33 @@
+@mixin centerThings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    height: 100vh;
+    display: grid;
+    grid-template: {
+        columns: repeat(auto-fill, minmax(500px, 1fr));
+        rows: auto;
+    }
+
+    .project {
+        // height: 33%;
+        // background-color: white;
+        @include centerThings();
+        border: 1px solid green;
+        height: 100%;
+        padding: 10%;
+    }
+
+    .red {
+        background-color: rgb(255, 94, 94);
+    }
+
+    .blue {
+        background-color: rgb(94, 94, 246);
+    }
+
+}
