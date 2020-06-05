@@ -5,6 +5,13 @@
     flex-direction: column;
 }
 
+@mixin bgImage($bgImage) {
+    background-image: url($bgImage); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .content {
     height: 100vh;
     display: grid;
@@ -12,22 +19,73 @@
         columns: repeat(auto-fill, minmax(500px, 1fr));
         rows: auto;
     }
+    
+
 
     .project {
         // height: 33%;
         // background-color: white;
         @include centerThings();
-        border: 1px solid green;
+
         height: 100%;
-        padding: 10%;
+
+        &:hover {
+            border: 2px solid white;
+        }
     }
 
-    .red {
-        background-color: rgb(255, 94, 94);
+    
+    .project-title {
+        @include centerThings();
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            letter-spacing: 15px;
+        }
+
+        .btn-web {
+            background-color: rgba(0,0,0,0);
+            border: 1px solid white;
+            color: white;
+            padding: 2vh 3vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2.5vh;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255,255,255,1) ;
+                color: black;
+            }
+        }
+
     }
 
-    .blue {
-        background-color: rgb(94, 94, 246);
+    .project-1 {
+        @include bgImage('./img/fitness_app.JPG');
     }
+    .project-2 {
+        @include bgImage('./img/hearts.JPG');
+    }
+    .project-3 {
+        @include bgImage('./img/hextorgb.JPG');
+    }
+    .project-4 {
+        @include bgImage('./img/porfolio.JPG');
+    }
+    .project-5 {
+        @include bgImage('./img/strips.JPG');
+    }
+    .project-6 {
+        @include bgImage('./img/blackmamba.JPG');
+    }
+
 
 }

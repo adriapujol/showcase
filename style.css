@@ -59,15 +59,76 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid green;
   height: 100%;
-  padding: 10%;
 }
-.content .red {
-  background-color: #ff5e5e;
+.content .project:hover {
+  border: 2px solid white;
 }
-.content .blue {
-  background-color: #5e5ef6;
+.content .project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.content .project-title:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .project-title h1 {
+  letter-spacing: 15px;
+}
+.content .project-title .btn-web {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  padding: 2vh 3vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vh;
+  cursor: pointer;
+}
+.content .project-title .btn-web:hover {
+  background-color: white;
+  color: black;
+}
+.content .project-1 {
+  background-image: url("./img/fitness_app.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-2 {
+  background-image: url("./img/hearts.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-3 {
+  background-image: url("./img/hextorgb.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-4 {
+  background-image: url("./img/porfolio.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-5 {
+  background-image: url("./img/strips.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-6 {
+  background-image: url("./img/blackmamba.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
