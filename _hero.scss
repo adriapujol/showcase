@@ -33,22 +33,15 @@
             z-index: -1;
         }
 
-        &::before {
-            @include stroke(#ff00ff);
-
-        }
-
         &:hover {
             &::before {
+                @include stroke(#ff00ff);
                 animation: glitch-effect 3s infinite;
             }
             &::after {
+                @include stroke(#00ffff);
                 animation: glitch-effect 2s infinite;
             }
-        }
-
-        &::after {
-            @include stroke(#00ff00);
         }
 
 
