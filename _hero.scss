@@ -5,12 +5,12 @@
     flex-direction: column;
 }
 
-@mixin stroke {
-    color: black;
-    text-shadow: -1px 1px 0 #fff,
-    1px 1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px -1px 0 #fff;
+@mixin stroke($color) {
+    color:black;
+    text-shadow: -1px 1px 0 $color,
+    1px 1px 0 $color,
+    1px -1px 0 $color,
+    -1px -1px 0 $color;
 }
 
 .hero {
@@ -20,13 +20,68 @@
 
     .main_title {
         font-size: 10vw;
-        @include stroke();
+        @include stroke(#fff);
+        position: relative;
+
+        &::before, &::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        &::before {
+            @include stroke(#ff00ff);
+
+        }
+
+        &:hover {
+            &::before {
+                animation: glitch-effect 3s infinite;
+            }
+            &::after {
+                animation: glitch-effect 2s infinite;
+            }
+        }
+
+        &::after {
+            @include stroke(#00ff00);
+        }
+
+
+
+    }
+
+    @keyframes glitch-effect {
+        0% {
+            left: -2px;
+            top: -2px;
+        }
+        25% {
+            left: 2px;
+            top: 0px;
+        }
+        50% {
+            left: -1px;
+            top: -2px;
+        }
+        75% {
+            left: 1px;
+            top: -1px;
+        }
+        100% {
+            left: 0px;
+            top: -2px;
+        }
     }
 
     .arrow {
         text-decoration: none;
         font-size: 50px;
-        @include stroke();
+        @include stroke(#fff);
         position: absolute;
         bottom: 5vh;
         transition: all 0.1s ease-in;

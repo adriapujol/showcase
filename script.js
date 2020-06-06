@@ -8,6 +8,7 @@ setTimeout(function() {
     let timer = setInterval(onTick, 150);
     function onTick() {
         title.innerHTML += titleLetters[char];
+        title.dataset.text = title.innerHTML;
         char++
         if (char === titleLetters.length) {
             complete(timer);

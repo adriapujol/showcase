@@ -23,6 +23,52 @@ body {
   font-size: 10vw;
   color: black;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+  position: relative;
+}
+.hero .main_title::before, .hero .main_title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero .main_title::before {
+  color: black;
+  text-shadow: -1px 1px 0 #ff00ff, 1px 1px 0 #ff00ff, 1px -1px 0 #ff00ff, -1px -1px 0 #ff00ff;
+}
+.hero .main_title:hover::before {
+  animation: glitch-effect 3s infinite;
+}
+.hero .main_title:hover::after {
+  animation: glitch-effect 2s infinite;
+}
+.hero .main_title::after {
+  color: black;
+  text-shadow: -1px 1px 0 #00ff00, 1px 1px 0 #00ff00, 1px -1px 0 #00ff00, -1px -1px 0 #00ff00;
+}
+@keyframes glitch-effect {
+  0% {
+    left: -2px;
+    top: -2px;
+  }
+  25% {
+    left: 2px;
+    top: 0px;
+  }
+  50% {
+    left: -1px;
+    top: -2px;
+  }
+  75% {
+    left: 1px;
+    top: -1px;
+  }
+  100% {
+    left: 0px;
+    top: -2px;
+  }
 }
 .hero .arrow {
   text-decoration: none;
@@ -96,8 +142,7 @@ body {
   cursor: pointer;
 }
 .content .project-title .btn-web:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .content .project-1 {
   background-image: url("./img/fitness_app.JPG");
