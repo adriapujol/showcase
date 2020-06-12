@@ -1,3 +1,5 @@
+const about = document.getElementById('about');
+console.log(about);
 const title = document.getElementById('main_title');
 const titleLetters = title.textContent.split('');
 title.innerHTML = '';
@@ -23,3 +25,9 @@ const complete = (timer) => {
     clearInterval(timer);
     timer = null;
 }
+
+
+about.addEventListener('click', function(){
+    document.getElementById('about-text').classList.toggle('slide-in');
+    document.getElementById('about-p').classList.toggle('text-appear');
+});
