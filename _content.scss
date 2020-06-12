@@ -29,7 +29,15 @@
         height: 100%;
         font-size: minmax(10px, 1.5vw);
         &:hover {
-            border: 2px solid white;
+            // border: 2px solid black;
+            p {
+                color: white;
+            }
+            .btn-web {
+                border: 2px solid white;
+                color: white;                
+            }
+
         }
     }
 
@@ -38,10 +46,11 @@
         @include centerThings();
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
+            
         }
 
         h1 {
@@ -54,9 +63,9 @@
         }
 
         .btn-web {
-            background-color: rgba(0,0,0,0);
-            border: 1px solid white;
-            color: white;
+            background-color: rgba(255,255,255,0.5);
+            border: 2px solid black;
+            color: black;
             padding: 2vh 5vw;
             text-align: center;
             text-decoration: none;
@@ -66,7 +75,8 @@
             cursor: pointer;
 
             &:hover {
-                background-color: rgba(0, 0, 0, 0.8) ;
+                background-color: rgba(255, 0, 0, 0.8) ;
+
             }
         }
 
