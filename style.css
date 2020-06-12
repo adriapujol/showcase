@@ -7,7 +7,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: black;
+  background-color: whitesmoke;
   color: black;
 }
 @media only screen and (max-width: 960px) {
@@ -252,37 +252,7 @@ body {
   background-color: rgba(255, 0, 0, 0.8);
 }
 .content .project-1 {
-  background-image: url("./img/fitness_app.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.content .project-2 {
-  background-image: url("./img/hearts.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.content .project-3 {
-  background-image: url("./img/hextorgb.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.content .project-4 {
-  background-image: url("./img/porfolio.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.content .project-5 {
-  background-image: url("./img/strips.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.content .project-6 {
-  background-image: url("./img/blackmamba.JPG");
+  background-image: url("./img/showcase.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
