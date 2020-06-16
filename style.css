@@ -257,5 +257,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.content .project-2 {
+  background-image: url("./img/triviaquiz.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
