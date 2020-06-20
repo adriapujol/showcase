@@ -88,9 +88,9 @@
     .project-2 {
         @include bgImage('./img/triviaquiz.JPG');
     }
-    // .project-3 {
-    //     @include bgImage('./img/hextorgb.JPG');
-    // }
+    .project-3 {
+        @include bgImage('./img/soundbox.jpeg');
+    }
     // .project-4 {
     //     @include bgImage('./img/porfolio.JPG');
     // }
