@@ -263,5 +263,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.content .project-3 {
+  background-image: url("./img/soundbox.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
