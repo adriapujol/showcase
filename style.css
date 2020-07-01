@@ -60,6 +60,7 @@ body {
   height: 100vh;
   width: 100vw;
   transform: translateX(100%);
+  animation-fill-mode: backwards;
   transition: all ease-in-out 1s;
   display: flex;
   justify-content: center;
@@ -265,6 +266,12 @@ body {
 }
 .content .project-3 {
   background-image: url("./img/soundbox.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .project-4 {
+  background-image: url("./img/immaletyoufinish.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
